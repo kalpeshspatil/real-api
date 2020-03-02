@@ -1,0 +1,792 @@
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1709537756
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+07:07:41.455 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+07:07:41.462 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1380 ms
+07:07:43.416 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+07:07:43.463 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.LoginController:
+	{[GET, POST] /loginUser}: login(HttpServletRequest,HttpServletResponse,String,HttpSession)
+	{[GET, POST] /userRegistration}: check(HttpServletRequest,String)
+07:07:43.465 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.PropertyDetailsController:
+	{[GET, POST] /searchPropertyList}: searchproplist(HttpServletRequest,String)
+	{[GET, POST] /getPropertyList}: proplist(HttpServletRequest)
+	{[GET, POST] /addProperty}: add(HttpServletRequest,String)
+07:07:43.467 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+07:07:43.469 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+07:07:43.493 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+07:07:43.502 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+07:07:43.597 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health/**, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+07:07:43.597 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+07:07:43.598 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/info, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+07:07:43.598 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping$WebMvcLinksHandler.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+12:10:09.294 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12:10:09.295 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+12:10:09.302 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12:10:09.302 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+12:10:09.309 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/", parameters={}
+12:10:09.316 [http-nio-9090-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+12:10:09.319 [http-nio-9090-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+12:10:09.319 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+12:10:09.324 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+12:10:09.325 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+12:10:09.326 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+12:10:09.342 [http-nio-9090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+12:10:09.343 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+12:10:32.697 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/userRegistration", parameters={}
+12:10:32.700 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#check(HttpServletRequest, String)
+12:10:32.707 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+12:10:32.708 [http-nio-9090-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.LoginController.check(javax.servlet.http.HttpServletRequest,java.lang.String) throws org.json.JSONException]
+12:10:32.708 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+12:10:32.709 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+12:10:32.709 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+12:10:32.710 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+12:10:32.712 [http-nio-9090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+12:10:32.712 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+12:19:23.534 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/userRegistration", parameters={}
+12:19:23.536 [http-nio-9090-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#check(HttpServletRequest, String)
+12:19:23.548 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 403 FORBIDDEN
+12:19:31.305 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/userRegistration", parameters={}
+12:19:31.307 [http-nio-9090-exec-6] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#check(HttpServletRequest, String)
+12:19:31.308 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+12:19:31.308 [http-nio-9090-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.LoginController.check(javax.servlet.http.HttpServletRequest,java.lang.String) throws org.json.JSONException]
+12:19:31.309 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+12:19:31.309 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+12:19:31.310 [http-nio-9090-exec-6] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+12:19:31.310 [http-nio-9090-exec-6] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+12:19:31.311 [http-nio-9090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+12:19:31.312 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+12:23:25.795 [http-nio-9090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/userRegistration", parameters={}
+12:23:25.796 [http-nio-9090-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#check(HttpServletRequest, String)
+12:23:25.797 [http-nio-9090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 403 FORBIDDEN
+12:40:47.345 [http-nio-9090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/searchPropertyList", parameters={}
+12:40:47.347 [http-nio-9090-exec-8] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+12:40:47.353 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "text/plain;charset=UTF-8" to ["{"searchPropertyField":"Pune"}"]
+12:40:47.453 [http-nio-9090-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+Hibernate: 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+12:40:47.470 [http-nio-9090-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Pune]
+12:40:47.488 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+12:40:47.489 [http-nio-9090-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{propertylist=[com.realestate.Model.PropertyDetailsModel@4bae341c], res=1}]
+12:40:47.542 [http-nio-9090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+00:08:33.282 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/searchPropertyList", parameters={}
+00:08:33.284 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+00:08:33.286 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "text/plain;charset=UTF-8" to ["{"searchPropertyField":"Pune"}"]
+00:08:33.287 [http-nio-9090-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+Hibernate: 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+00:08:33.288 [http-nio-9090-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Pune]
+00:08:33.289 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+00:08:33.290 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{propertylist=[com.realestate.Model.PropertyDetailsModel@1385dd9b], res=1}]
+00:08:33.290 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+01:35:37.125 [http-nio-9090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/loginUser", parameters={}
+01:35:37.125 [http-nio-9090-exec-4] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#login(HttpServletRequest, HttpServletResponse, String, HttpSession)
+01:35:37.126 [http-nio-9090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 403 FORBIDDEN
+01:39:32.066 [http-nio-9090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/", parameters={}
+01:39:32.068 [http-nio-9090-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+01:39:32.068 [http-nio-9090-exec-9] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+01:39:32.068 [http-nio-9090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+01:39:32.069 [http-nio-9090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+01:39:32.070 [http-nio-9090-exec-9] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+01:39:32.070 [http-nio-9090-exec-9] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+01:39:32.072 [http-nio-9090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+01:39:32.072 [http-nio-9090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+01:39:52.341 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/loginUser", parameters={}
+01:39:52.342 [http-nio-9090-exec-10] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#login(HttpServletRequest, HttpServletResponse, String, HttpSession)
+01:39:52.342 [http-nio-9090-exec-10] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+01:39:52.342 [http-nio-9090-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,javax.servlet.http.HttpSession)]
+01:39:52.343 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+01:39:52.343 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+01:39:52.343 [http-nio-9090-exec-10] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+01:39:52.344 [http-nio-9090-exec-10] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+01:39:52.345 [http-nio-9090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+01:39:52.345 [http-nio-9090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+01:47:25.641 [http-nio-9090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/searchPropertyList", parameters={}
+01:47:25.642 [http-nio-9090-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+01:47:25.643 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "text/plain;charset=UTF-8" to ["{"searchPropertyField":"Pune"}"]
+01:47:25.644 [http-nio-9090-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+Hibernate: 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+01:47:25.646 [http-nio-9090-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Pune]
+01:47:25.648 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+01:47:25.649 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{propertylist=[com.realestate.Model.PropertyDetailsModel@3d277fb0], res=1}]
+01:47:25.650 [http-nio-9090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+02:06:22.263 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/searchPropertyList", parameters={}
+02:06:22.264 [http-nio-9090-exec-5] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:06:22.265 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "text/plain;charset=UTF-8" to ["{"searchPropertyField":"Mumbai"}"]
+02:06:22.266 [http-nio-9090-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+Hibernate: 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+02:06:22.267 [http-nio-9090-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Mumbai]
+02:06:22.270 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+02:06:22.270 [http-nio-9090-exec-5] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{propertylist=[com.realestate.Model.PropertyDetailsModel@6a4af9ec, com.realestate.Model.PropertyDeta (truncated)...]
+02:06:22.271 [http-nio-9090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+02:10:55.309 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - OPTIONS "/api/loginUser", parameters={}
+02:10:55.309 [http-nio-9090-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.LoginController#login(HttpServletRequest, HttpServletResponse, String, HttpSession)
+02:10:55.310 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 403 FORBIDDEN
+02:13:43.250 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/searchPropertyList", parameters={}
+02:13:43.251 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:13:43.252 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "text/plain;charset=UTF-8" to ["{"searchPropertyField":"Mumbai"}"]
+02:13:43.253 [http-nio-9090-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+Hibernate: 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+02:13:43.255 [http-nio-9090-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Mumbai]
+02:13:43.258 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+02:13:43.258 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{propertylist=[com.realestate.Model.PropertyDetailsModel@72c7f7f2, com.realestate.Model.PropertyDeta (truncated)...]
+02:13:43.259 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1464642111
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+02:08:38.598 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+02:08:38.602 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1253 ms
+02:08:40.201 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+02:08:40.261 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.LoginController:
+	{[GET, POST] /loginUser}: login(HttpServletRequest,HttpServletResponse,String,HttpSession)
+	{[GET, POST] /userRegistration}: check(HttpServletRequest,String)
+02:08:40.263 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.PropertyDetailsController:
+	{[GET, POST] /getPropertyList}: proplist(HttpServletRequest)
+	{[GET, POST] /searchPropertyList}: searchproplist(HttpServletRequest,String)
+	{[GET, POST] /addProperty}: add(HttpServletRequest,String)
+02:08:40.265 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+02:08:40.267 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+02:08:40.295 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+02:08:40.304 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+02:08:40.420 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:08:40.421 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health/**, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:08:40.421 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/info, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:08:40.422 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping$WebMvcLinksHandler.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@985934102
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+02:11:20.721 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+02:11:20.723 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1334 ms
+02:11:22.311 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+02:11:22.360 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.LoginController:
+	{[GET, POST] /loginUser}: login(HttpServletRequest,HttpServletResponse,String,HttpSession)
+	{[GET, POST] /userRegistration}: check(HttpServletRequest,String)
+02:11:22.361 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.PropertyDetailsController:
+	{[GET, POST] /getPropertyList}: proplist(HttpServletRequest)
+	{[GET, POST] /searchPropertyList}: searchproplist(HttpServletRequest,String)
+	{[GET, POST] /addProperty}: add(HttpServletRequest,String)
+02:11:22.364 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+02:11:22.366 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+02:11:22.389 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+02:11:22.397 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+02:11:22.492 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:11:22.493 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health/**, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:11:22.494 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/info, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:11:22.494 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping$WebMvcLinksHandler.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+02:11:23.798 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02:11:23.798 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+02:11:23.805 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+02:11:23.805 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+02:11:23.904 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/", parameters={}
+02:11:23.912 [http-nio-9090-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+02:11:23.917 [http-nio-9090-exec-2] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+02:11:23.917 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+02:11:23.922 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+02:11:23.924 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+02:11:23.925 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+02:11:23.940 [http-nio-9090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+02:11:23.943 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+02:13:59.568 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/api/searchPropertyList", parameters={}
+02:13:59.570 [http-nio-9090-exec-6] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:13:59.578 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "text/plain;charset=UTF-8" to ["{"searchPropertyField":"Pune"}"]
+02:13:59.681 [http-nio-9090-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+Hibernate: 
+    select
+        propertyde0_.pkid as pkid1_0_,
+        propertyde0_.apartment_name as apartmen2_0_,
+        propertyde0_.apartment_type as apartmen3_0_,
+        propertyde0_.availability as availabi4_0_,
+        propertyde0_.available_for_lease as availabl5_0_,
+        propertyde0_.balcony as balcony6_0_,
+        propertyde0_.bathrooms as bathroom7_0_,
+        propertyde0_.bhk_type as bhk_type8_0_,
+        propertyde0_.end_time as end_time9_0_,
+        propertyde0_.expected_deposite as expecte10_0_,
+        propertyde0_.expected_rent as expecte11_0_,
+        propertyde0_.floor as floor12_0_,
+        propertyde0_.furnishing as furnish13_0_,
+        propertyde0_.gateway_community as gateway14_0_,
+        propertyde0_.gym as gym15_0_,
+        propertyde0_.maintenance as mainten16_0_,
+        propertyde0_.nonveg_allowed as nonveg_17_0_,
+        propertyde0_.parking as parking18_0_,
+        propertyde0_.prefered_tenants as prefere19_0_,
+        propertyde0_.property_age as propert20_0_,
+        propertyde0_.property_city as propert21_0_,
+        propertyde0_.property_facing as propert22_0_,
+        propertyde0_.property_locality as propert23_0_,
+        propertyde0_.property_size as propert24_0_,
+        propertyde0_.property_type as propert25_0_,
+        propertyde0_.secondary_no as seconda26_0_,
+        propertyde0_.start_time as start_t27_0_,
+        propertyde0_.street_address as street_28_0_,
+        propertyde0_.total_floor as total_f29_0_,
+        propertyde0_.type_of_ad as type_of30_0_,
+        propertyde0_.user_id as user_id31_0_,
+        propertyde0_.water_supply as water_s32_0_,
+        propertyde0_.whowill_show_house as whowill33_0_ 
+    from
+        re_property_details propertyde0_ 
+    where
+        propertyde0_.property_city=?
+02:13:59.699 [http-nio-9090-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [Pune]
+02:13:59.719 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+02:13:59.720 [http-nio-9090-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{propertylist=[com.realestate.Model.PropertyDetailsModel@5e1046b0], res=1}]
+02:13:59.756 [http-nio-9090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+02:14:08.500 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/searchPropertyList", parameters={}
+02:14:08.501 [http-nio-9090-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:14:08.502 [http-nio-9090-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+02:14:08.504 [http-nio-9090-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.PropertyDetailsController.searchproplist(javax.servlet.http.HttpServletRequest,java.lang.String) throws org.json.JSONException]
+02:14:08.504 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+02:14:08.504 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+02:14:08.505 [http-nio-9090-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+02:14:08.505 [http-nio-9090-exec-7] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+02:14:08.508 [http-nio-9090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+02:14:08.508 [http-nio-9090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+02:18:36.476 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/searchPropertyList", parameters={}
+02:18:36.478 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:18:36.479 [http-nio-9090-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+02:18:36.480 [http-nio-9090-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.PropertyDetailsController.searchproplist(javax.servlet.http.HttpServletRequest,java.lang.String) throws org.json.JSONException]
+02:18:36.480 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+02:18:36.481 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+02:18:36.481 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+02:18:36.481 [http-nio-9090-exec-1] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+02:18:36.482 [http-nio-9090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+02:18:36.483 [http-nio-9090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+02:19:35.403 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/searchPropertyList", parameters={}
+02:19:35.405 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:19:35.406 [http-nio-9090-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+02:19:35.406 [http-nio-9090-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.PropertyDetailsController.searchproplist(javax.servlet.http.HttpServletRequest,java.lang.String) throws org.json.JSONException]
+02:19:35.407 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+02:19:35.407 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+02:19:35.408 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+02:19:35.408 [http-nio-9090-exec-2] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+02:19:35.410 [http-nio-9090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+02:19:35.410 [http-nio-9090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+02:20:21.301 [http-nio-9090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/api/searchPropertyList", parameters={}
+02:20:21.303 [http-nio-9090-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.realestate.Controller.PropertyDetailsController#searchproplist(HttpServletRequest, String)
+02:20:21.304 [http-nio-9090-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/octet-stream" to []
+02:20:21.304 [http-nio-9090-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.util.HashMap<java.lang.Object, java.lang.Object> com.realestate.Controller.PropertyDetailsController.searchproplist(javax.servlet.http.HttpServletRequest,java.lang.String) throws org.json.JSONException]
+02:20:21.304 [http-nio-9090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 400 BAD_REQUEST
+02:20:21.305 [http-nio-9090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/api/error", parameters={}
+02:20:21.306 [http-nio-9090-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 matching mappings: [{ /error, produces [text/html]}, { /error}]
+02:20:21.306 [http-nio-9090-exec-3] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+02:20:21.307 [http-nio-9090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+02:20:21.307 [http-nio-9090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 400
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1929600551
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+02:22:14.484 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+02:22:14.486 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1098 ms
+02:22:15.998 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+02:22:16.046 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.LoginController:
+	{[GET, POST] /loginUser}: login(HttpServletRequest,HttpServletResponse,String,HttpSession)
+	{[GET, POST] /userRegistration}: check(HttpServletRequest,String)
+02:22:16.047 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.PropertyDetailsController:
+	{[GET, POST] /getPropertyList}: proplist(HttpServletRequest)
+	{[GET, POST] /searchPropertyList}: searchproplist(HttpServletRequest,String)
+	{[GET, POST] /addProperty}: add(HttpServletRequest,String)
+02:22:16.048 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+02:22:16.050 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+02:22:16.070 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+02:22:16.076 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+02:22:16.160 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:22:16.160 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health/**, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:22:16.161 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/info, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:22:16.161 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping$WebMvcLinksHandler.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+LOGBACK: No context given for c.q.l.core.rolling.SizeAndTimeBasedRollingPolicy@1355531311
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.4.RELEASE)
+
+02:22:27.761 [main] DEBUG o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+02:22:27.763 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1324 ms
+02:22:29.386 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+02:22:29.431 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.LoginController:
+	{[GET, POST] /loginUser}: login(HttpServletRequest,HttpServletResponse,String,HttpSession)
+	{[GET, POST] /userRegistration}: check(HttpServletRequest,String)
+02:22:29.432 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.r.C.PropertyDetailsController:
+	{[GET, POST] /searchPropertyList}: searchproplist(HttpServletRequest,String)
+	{[GET, POST] /getPropertyList}: proplist(HttpServletRequest)
+	{[GET, POST] /addProperty}: add(HttpServletRequest,String)
+02:22:29.434 [main] TRACE o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+02:22:29.436 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 7 mappings in 'requestMappingHandlerMapping'
+02:22:29.455 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+02:22:29.461 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+02:22:29.547 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health/**, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:22:29.547 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/health, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:22:29.548 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator/info, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+02:22:29.548 [main] TRACE o.s.b.a.e.w.s.WebMvcEndpointHandlerMapping - Register "{GET /actuator, produces [application/vnd.spring-boot.actuator.v3+json || application/vnd.spring-boot.actuator.v2+json || application/json]}" to public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping$WebMvcLinksHandler.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
