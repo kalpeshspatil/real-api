@@ -98,6 +98,7 @@ public class LoginController {
 			else {
 				System.out.println("LoggedIn Incorrect");
 				response.put("status", 0);
+				response.put("message", "Incorrect email or password.");
 				return response;
 			}
 			
